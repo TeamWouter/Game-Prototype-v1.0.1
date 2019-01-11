@@ -28,69 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GamePanel = new System.Windows.Forms.Panel();
-            this.RadarPanel = new System.Windows.Forms.Panel();
-            this.EyesPanel = new System.Windows.Forms.Panel();
-            this.EditorPanel = new System.Windows.Forms.Panel();
-            this.GamePanel.SuspendLayout();
+            this.flow = new System.Windows.Forms.FlowLayoutPanel();
+            this.camera3D = new System.Windows.Forms.Panel();
+            this.camera2D = new System.Windows.Forms.Panel();
+            this.waves2D = new System.Windows.Forms.Panel();
+            this.flow.SuspendLayout();
             this.SuspendLayout();
             // 
-            // GamePanel
+            // flow
             // 
-            this.GamePanel.Controls.Add(this.EditorPanel);
-            this.GamePanel.Controls.Add(this.EyesPanel);
-            this.GamePanel.Controls.Add(this.RadarPanel);
-            this.GamePanel.Location = new System.Drawing.Point(0, 0);
-            this.GamePanel.Name = "GamePanel";
-            this.GamePanel.Size = new System.Drawing.Size(1146, 670);
-            this.GamePanel.TabIndex = 0;
+            this.flow.AutoScroll = true;
+            this.flow.Controls.Add(this.camera3D);
+            this.flow.Controls.Add(this.camera2D);
+            this.flow.Controls.Add(this.waves2D);
+            this.flow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flow.Location = new System.Drawing.Point(0, 0);
+            this.flow.Name = "flow";
+            this.flow.Size = new System.Drawing.Size(1146, 668);
+            this.flow.TabIndex = 0;
             // 
-            // RadarPanel
+            // camera3D
             // 
-            this.RadarPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.RadarPanel.Location = new System.Drawing.Point(3, 3);
-            this.RadarPanel.Name = "RadarPanel";
-            this.RadarPanel.Size = new System.Drawing.Size(491, 336);
-            this.RadarPanel.TabIndex = 0;
-            this.RadarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.RadarPanel_Paint);
+            this.camera3D.Location = new System.Drawing.Point(3, 3);
+            this.camera3D.Name = "camera3D";
+            this.camera3D.Size = new System.Drawing.Size(1123, 218);
+            this.camera3D.TabIndex = 0;
             // 
-            // EyesPanel
+            // camera2D
             // 
-            this.EyesPanel.Location = new System.Drawing.Point(500, 3);
-            this.EyesPanel.Name = "EyesPanel";
-            this.EyesPanel.Size = new System.Drawing.Size(491, 336);
-            this.EyesPanel.TabIndex = 1;
+            this.camera2D.Location = new System.Drawing.Point(3, 227);
+            this.camera2D.Name = "camera2D";
+            this.camera2D.Size = new System.Drawing.Size(1123, 218);
+            this.camera2D.TabIndex = 1;
             // 
-            // EditorPanel
+            // waves2D
             // 
-            this.EditorPanel.Location = new System.Drawing.Point(3, 345);
-            this.EditorPanel.Name = "EditorPanel";
-            this.EditorPanel.Size = new System.Drawing.Size(491, 311);
-            this.EditorPanel.TabIndex = 2;
+            this.waves2D.Location = new System.Drawing.Point(3, 451);
+            this.waves2D.Name = "waves2D";
+            this.waves2D.Size = new System.Drawing.Size(1123, 218);
+            this.waves2D.TabIndex = 2;
             // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 668);
-            this.Controls.Add(this.GamePanel);
+            this.Controls.Add(this.flow);
             this.Name = "MainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainScreen_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainScreen_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MainScreen_KeyUp);
-            this.GamePanel.ResumeLayout(false);
+            this.flow.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel GamePanel;
-        private System.Windows.Forms.Panel EditorPanel;
-        private System.Windows.Forms.Panel EyesPanel;
-        private System.Windows.Forms.Panel RadarPanel;
+        private System.Windows.Forms.FlowLayoutPanel flow;
+        private System.Windows.Forms.Panel camera3D;
+        private System.Windows.Forms.Panel camera2D;
+        private System.Windows.Forms.Panel waves2D;
     }
 }
 

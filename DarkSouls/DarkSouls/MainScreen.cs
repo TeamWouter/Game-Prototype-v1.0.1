@@ -112,5 +112,10 @@ namespace DarkSouls
         {
             _radarScreen.Draw(e.Graphics, _player);
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

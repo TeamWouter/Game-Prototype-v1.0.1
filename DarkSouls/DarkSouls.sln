@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSouls", "DarkSouls\DarkSouls.csproj", "{9B744BDD-E34A-4CED-A171-7EAC599B5722}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Danksouls", "Danksouls\Danksouls.csproj", "{3D0939B2-90EE-4EE8-A6C5-8EEAFC28DE76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9B744BDD-E34A-4CED-A171-7EAC599B5722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B744BDD-E34A-4CED-A171-7EAC599B5722}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B744BDD-E34A-4CED-A171-7EAC599B5722}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B744BDD-E34A-4CED-A171-7EAC599B5722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0939B2-90EE-4EE8-A6C5-8EEAFC28DE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0939B2-90EE-4EE8-A6C5-8EEAFC28DE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0939B2-90EE-4EE8-A6C5-8EEAFC28DE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0939B2-90EE-4EE8-A6C5-8EEAFC28DE76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
